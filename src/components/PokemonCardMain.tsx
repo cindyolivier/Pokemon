@@ -36,7 +36,7 @@ const PokemonCardMain: FunctionComponent<{ pokemon?: Pokemon }> = (props) => {
     <Main>
       <>
         {pokemon?.attacks?.map((attack) => (
-          <div>
+          <div key={attack.name}>
             <DivH2>
               <H2>
                 <span role="img" aria-label="attack icon">

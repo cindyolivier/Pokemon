@@ -7,7 +7,7 @@ import PokemonCardHeader from "./PokemonCardHeader";
 import PokemonCardMain from "./PokemonCardMain";
 import PokemonCardFooter from "./PokemonCardFooter";
 
-const Container = styled.body`
+const Container = styled.div`
   font-size: 1rem;
   border: solid #cfb14b 1.5rem;
   border-radius: 2.7rem;
