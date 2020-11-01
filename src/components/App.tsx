@@ -29,7 +29,12 @@ const App = () => {
       <Div>
         <span> Pokemon index : {pokemonIndex}</span>
         <Button onClick={() => setPokemonIndex(pokemonIndex + 1)}>+</Button>
-        <Button onClick={() => setPokemonIndex(pokemonIndex - 1)}>-</Button>
+        <Button
+          onClick={() => setPokemonIndex(pokemonIndex - 1)}
+          disabled={pokemonIndex <= 1}
+        >
+          -
+        </Button>
       </Div>
       <PokemonCard index={pokemonIndex} />
     </div>
