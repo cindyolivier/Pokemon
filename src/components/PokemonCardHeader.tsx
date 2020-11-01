@@ -59,7 +59,10 @@ const PokemonCardHeader = (props: { pokemon?: Pokemon }) => {
         <H1>{name}</H1>
         <p style={{ fontWeight: "bold" }}>
           {" "}
-          PV <span style={{ fontSize: "1.8rem" }}>{pv} ⭐</span>
+          PV <span style={{ fontSize: "1.8rem" }}>{pv} </span>
+          <span style={{ fontSize: "1.8rem" }} role="img" aria-label="PV icon">
+            ⭐
+          </span>
         </p>
       </Header>
       <ImgPokemon src={img} alt="Pokémon" />

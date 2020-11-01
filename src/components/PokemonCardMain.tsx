@@ -38,7 +38,12 @@ const PokemonCardMain: FunctionComponent<{ pokemon?: Pokemon }> = (props) => {
         {pokemon?.attacks?.map((attack) => (
           <div>
             <DivH2>
-              <H2>⭐ ⭐ {attack.name}</H2>
+              <H2>
+                <span role="img" aria-label="attack icon">
+                  ⭐ ⭐{" "}
+                </span>
+                {attack.name}
+              </H2>
               <p>{pokemon?.power}</p>
             </DivH2>
             <MainP>{attack.description}</MainP>
